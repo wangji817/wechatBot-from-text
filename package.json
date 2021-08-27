@@ -21,5 +21,11 @@
         "qrcode-terminal": "^0.12.0",
         "superagent": "^4.1.0",
         "wechaty": "^0.27.16"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "fs": "^0.0.1-security",
+        "nodemailer": "^6.6.3",
+        "qrcode": "^1.4.4"
     }
 }

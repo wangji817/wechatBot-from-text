@@ -34,16 +34,14 @@ async function getWeather() { //获取墨迹天气
 
 async function getReply(word) { // 天行聊天机器人
     let url = config.AIBOTAPI
-    let res = await superagent.req(url, 'GET', { key: config.APIKEY, question: word,mode:1,datatype:0 })
+    let res = await superagent.req(url, 'GET', { key: config.APIKEY, question: word, mode: 1, datatype: 0 })
     let content = JSON.parse(res.text)
+    // console.log(content.newslist, content.newslist.length)
     if (content.code == 200) {
-        // console.log(content)
         let response = ''
-        if(content.datatype=='text'){
-            response =  content.newslist[0].reply.replace('{robotname}','小助手').replace('{appellation}','小主')
-        }else if(content.datatype==='view'){
-            response = '虽然我不太懂你说的是什么，但是感觉很高级的样子，因此我也查找了类似的文章去学习，你觉得有用吗<br>'+'《' +content.newslist[0].title +'》'+ content.newslist[0].url
-        }else{
+        if (content.newslist && content.newslist.length > 0) {
+            response = content.newslist[0].content ? (content.newslist[0].content + "---来自 " + content.newslist[0].source) : '你太厉害了，说的话把我难倒了，我要去学习了，不然没法回答你的问题~'
+        } else {
             response = '你太厉害了，说的话把我难倒了，我要去学习了，不然没法回答你的问题'
         }
         return response
