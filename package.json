@@ -23,6 +23,7 @@
         "wechaty": "^0.27.16"
     },
     "dependencies": {
+        "child_process": "^1.0.2",
         "express": "^4.17.1",
         "fs": "^0.0.1-security",
         "nodemailer": "^6.6.3",

@@ -12,8 +12,8 @@ let mailTransport = nodemailer.createTransport({
     secure: true, // use SSL
     port: 465,
     auth: {
-        user: 'xxx@qq.com',/**qq邮箱地址 */
-        pass: 'xxx',/**qq邮箱授权码 */
+        user: '526153861@qq.com',/**qq邮箱地址 */
+        pass: 'nophsgszswbjbhdc',/**qq邮箱授权码 */
     },
 });
 
@@ -46,8 +46,8 @@ function sendEmail(qrcode) {
 
 function sendEmails(){
     let options = {
-        from: 'xxx@qq.com',
-        to: 'xxx@139.com',
+        from: '526153861@qq.com',
+        to: '13867158100@139.com',
         subject: '微信登录二维码',
         text: '微信登录二维码',
         html: `<h1>微信助手登录二维码</h1><p><img src="cid:qrcode"/></p>`,
