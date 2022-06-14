@@ -18,7 +18,7 @@ module.exports = {
     ONE: 'http://wufazhuce.com/', ////ONE的web版网站
     MOJI_HOST: 'https://tianqi.moji.com/weather/china/', //中国墨迹天气url
     roomDesc:
-        '@所有人<br>{time}<br>大家好，本周周报记得下班前写一下 <br>https://docs.qq.com/sheet/DSlZTZXhnUGhtS1Bu?tab=BB08J2<br>新人可在本周日期内新增一行，格式：参照其他同学(导师负责新人指导一下)<br>每周壹句：{oneday}',
+        '@所有人<br>{time}<br>大家好，本周周报记得下班前写一下 <br>在线表格<br>新人可在本周日期内新增一行，格式：参照其他同学(导师负责新人指导一下)<br>每周壹句：{oneday}',
     roomDesc2: "@所有人<br>{time}<br>大家好，大家单子Jira子任务别忘记创建~~~",
     //高级功能配置项（非必填项）
     AUTOREPLY: false, //自动聊天功能 默认关闭
