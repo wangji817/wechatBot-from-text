@@ -26,7 +26,7 @@
         "child_process": "^1.0.2",
         "express": "^4.17.1",
         "fs": "^0.0.1-security",
-        "nodemailer": "^6.6.3",
+        "nodemailer": "^7.0.11",
         "qrcode": "^1.4.4"
     }
 }
